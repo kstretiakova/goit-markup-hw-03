@@ -8,8 +8,34 @@ a {
     text-decoration:none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 ul,ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1128px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -20,6 +46,7 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+margin-right: 76px;
 }
 
 .logo:hover,
@@ -40,11 +67,16 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
+display: flex;
+gap: 40px;
+padding: 24px 0;
 }
+
 
 .link {
     color: #2e2f42;
 }
+
 
 .up-list .link:hover,
 .up-list .link:focus {
@@ -75,10 +107,19 @@ letter-spacing: 0.02em;
 
 .address-name {
     font-style: normal;
+    display: flex;
+    margin-left: auto;
+}
+
+.address-name-list {
+    display: flex;
+    gap: 40px;
 }
 
 .first {
     background-color: #2e2f42;
+    width: 1440px;
+    height: 600px;
 }
 
 .name-first {
@@ -88,6 +129,10 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
+padding-top: 188px;
+padding-right: 472px;
+padding-bottom: 292px;
+padding-left: 472px;
 }
 
 .name .zone-third {
@@ -163,17 +208,24 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 
-button {
-    cursor: pointer;
-    background-color: #4d5ae5;
-}
-.but-ton {
+
+.button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
+display: block;
+align-items: center;
+border: none;
+margin-right: auto;
+margin-left: auto;
+cursor: pointer;
+background-color: #4d5ae5;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 16px 32px;
 }
 
 .but-ton:hover,
