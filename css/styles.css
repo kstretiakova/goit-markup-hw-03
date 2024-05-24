@@ -3,7 +3,9 @@ body {
     color: #434455;
     background-color: #FFFFFF ;
 }
-
+img {
+    display: block
+}
 a {
     text-decoration:none;
 }
@@ -18,7 +20,7 @@ ul,ol {
     padding: 0;
 }
 .container {
-    width: 1128px;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -69,7 +71,7 @@ letter-spacing: 0.02em;
 color: #2e2f42;
 display: flex;
 gap: 40px;
-padding: 24px 0;
+padding: 24px 0 24px; 
 }
 
 
@@ -118,8 +120,7 @@ letter-spacing: 0.02em;
 
 .first {
     background-color: #2e2f42;
-    width: 1440px;
-    height: 600px;
+    padding: 188px 0;
 }
 
 .name-first {
@@ -129,12 +130,35 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
-padding-top: 188px;
-padding-right: 472px;
-padding-bottom: 292px;
-padding-left: 472px;
+max-width: 496px; 
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 48px;
+padding: auto;
 }
 
+.second {
+    padding: 120px 0;
+}
+
+.second-list {
+    display: flex;
+    gap: 24px;
+}
+.item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 .name .zone-third {
     font-weight: 700;
 font-size: 36px;
@@ -150,6 +174,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .paragraph-title {
@@ -162,6 +187,8 @@ color: #434455;
 
 .mark {
     background-color: #fff;
+    flex-basis: calc((100% - 72px) / 4));
+    border-radius: 0px 0px 4px 4px;
 }
 
 .mark-heading {
@@ -171,6 +198,8 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2e2f42;
+text-align: center;
+margin-bottom: 8px;
 }
 
 .mark-paragraph {
@@ -180,6 +209,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
+text-align: center;
 }
 
 .fourth-name {
@@ -226,6 +256,7 @@ background-color: #4d5ae5;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 padding: 16px 32px;
+min-width: 169px
 }
 
 .but-ton:hover,
@@ -235,7 +266,15 @@ padding: 16px 32px;
 
 .third {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
+.third-list {
+    display: flex;
+    gap: 24px;
+}
+
 
 .third-name {
     font-weight: 700;
@@ -245,6 +284,11 @@ letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
 color: #2e2f42;
+margin-bottom: 72px; 
+}
+
+.our-team {
+    padding: 32px 0;
 }
 .bottom {
     background-color: #2e2f42;
