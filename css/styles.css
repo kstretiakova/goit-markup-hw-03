@@ -212,6 +212,11 @@ color: #434455;
 text-align: center;
 }
 
+.fourth {
+    padding-top: 120px; 
+    padding-bottom: 120px;
+}
+
 .fourth-name {
     font-weight: 700;
 font-size: 36px;
@@ -220,14 +225,32 @@ letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
 color: #2e2f42;
+margin-bottom: 72px;
 }
 
+.fourth-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.fourth-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.our-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 .fourth-heading {
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .fourth-paragraph {
@@ -292,6 +315,7 @@ margin-bottom: 72px;
 }
 .bottom {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 .logo-part-bottom {
     font-weight: 700;
@@ -308,4 +332,18 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #f4f4fd;
+max-width: 264px
+}
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4d5ae5;
+margin-right: 76px;
+margin-bottom: 16px;
+display: inline-block;
+
 }
